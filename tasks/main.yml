@@ -1,7 +1,6 @@
 ---
 # tasks file for repo_passenger
-- name: Check if I`m on Ubuntu
-  fail: "This role is for Debian-like systems only"
+- fail: msg="This role is for Debian-like systems only"
   when: ansible_os_family != "Debian"
 
 - name: Ensure apt repository key is available
