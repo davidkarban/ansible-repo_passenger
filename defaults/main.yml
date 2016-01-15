@@ -1,0 +1,3 @@
+---
+# defaults file for repo_passenger
+state: 'present'
